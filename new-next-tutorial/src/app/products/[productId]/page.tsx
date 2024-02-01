@@ -8,17 +8,23 @@ type Props = {
   };
 };
 
-export const generateMetadata = async ({
-  params,
-}: Props): Promise<Metadata> => {
-  const title = await new Promise((reslove) => {
-    setTimeout(() => {
-      resolve(`iphone ${params.productId}`);
-    }, 100);
-  });
+// export const generateMetadata = async ({
+//   params,
+// }: Props): Promise<Metadata> => {
+//   const title = await new Promise((reslove) => {
+//     setTimeout(() => {
+//       resolve(`iphone ${params.productId}`);
+//     }, 100);
+//   });
 
+//   return {
+//     title: `Product ${params.productId}`,
+//   };
+// };
+
+export const genertaeMetadata = ({ params }: Props): Metadata => {
   return {
-    title: `Product ${params.productId}`,
+    title: `product ${params.productId}`,
   };
 };
 
