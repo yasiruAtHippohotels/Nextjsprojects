@@ -4,6 +4,7 @@ import React, { Fragment, useState } from "react";
 import NavLink from "./navLink/nav-link";
 import { link } from "fs";
 import styles from "./links.module.css";
+import Image from "next/image";
 
 function Links() {
   const links = [
@@ -44,7 +45,14 @@ function Links() {
           <NavLink item={{ title: "login", path: "/login" }} />
         )}
       </div>
-      <button onClick={() => setOpen((prev) => !prev)}>Menu</button>
+      <Image
+        src="/assets/menu.png"
+        alt=""
+        width={30}
+        height={30}
+        onClick={() => setOpen((prev) => !prev)}
+      />
+
       {open && (
         <div className={styles.mobileLinks}>
           {links.map((link) => (
