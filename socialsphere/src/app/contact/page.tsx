@@ -11,7 +11,7 @@ function ContactPage() {
       <div>
         {/* <HydrationTestNoSSR/> */}
         {/* <div suppressHydrationWarning>{a}</div> */}
-        <form action="">
+        <form action="" className="flex gap-2 flex-col items-center">
           <input type="text" placeholder="Name and Surname" />
           <input type="text" placeholder="Email Address" />
           <input type="text" placeholder="Phone Number (Optional)" />
