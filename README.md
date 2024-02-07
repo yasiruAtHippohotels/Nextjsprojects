@@ -20,3 +20,6 @@ git merge [branch]
 git add .
 git commit
 (swift + :wq)
+//////////////////////
+to stop a merge (git merge --abort)
+//////////////////////
